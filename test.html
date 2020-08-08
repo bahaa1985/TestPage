@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+
+    <script src="./dropzone-5.7.0/dist/dropzone.js"></script>    
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="test.css">
+
+    <link rel="stylesheet" href="./dropzone-5.7.0/dist/dropzone.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>    
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky">
+    <!-- SVG logo -->
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve" width="70px" height="50px" class=""><g><circle style="fill:#4A49AC" cx="255.997" cy="256" r="255.997" data-original="#452F00" class="" data-old_color="#452F00"/><path style="fill:#1A26AE" d="M511.969,253.655l-126.81-126.81h-20.827l-53.521-53.522l-0.083-0.145  c-0.974-1.693-2.58-2.93-4.467-3.44c-1.886-0.508-3.897-0.249-5.59,0.726l-44.41,25.537L211.93,70.32  c-3.519-2.039-8.027-0.838-10.067,2.683l-31.191,53.842h-37.937v40.185l-59.56,34.247c-1.692,0.974-2.93,2.58-3.44,4.467  c-0.509,1.886-0.248,3.897,0.726,5.591l25.537,44.41l-25.68,44.33c-2.038,3.52-0.839,8.027,2.682,10.067l59.735,59.735v9.394  l132.548,132.548c137.083-4.888,246.718-117.539,246.718-255.815C512,255.219,511.977,254.439,511.969,253.655z" data-original="#241900" class="" data-old_color="#241900"/><path style="fill:#FF0000" d="M385.159,379.27H132.734V126.845h252.425L385.159,379.27L385.159,379.27z M176.933,335.071H340.96  V171.044H176.933V335.071z" data-original="#FFE000" class="active-path" data-old_color="#FFE000"/><g>
+        <path style="fill:#FFFFFF;" d="M201.272,438.829L70.461,211.335c-2.026-3.524-0.812-8.03,2.714-10.059L300.669,70.465   c3.528-2.031,8.033-0.806,10.059,2.714l130.811,227.495c2.029,3.527,0.813,8.03-2.714,10.059l-227.494,130.81   C207.81,443.567,203.304,442.362,201.272,438.829z M86.905,210.376l123.467,214.722l214.722-123.466L301.628,86.909L86.905,210.376   z" data-original="#FFFFFF" class=""/>
+        <path style="fill:#FFFFFF;" d="M300.07,441.687L72.999,310.141c-3.52-2.039-4.721-6.546-2.683-10.067L201.863,73.003   c2.039-3.52,6.547-4.722,10.067-2.683l227.071,131.546c3.52,2.039,4.721,6.546,2.683,10.067L310.137,439.005   C308.096,442.526,303.588,443.725,300.07,441.687z M86.758,301.085l214.323,124.16l124.16-214.323L210.919,86.762L86.758,301.085z" data-original="#FFFFFF" class=""/>
+    </g></g> </svg>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Menu1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Menu2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Menu3</a>
+        </li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Dropdown link
+            </a>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+        </li>
+        </ul>        
+        <button class="btn btn-danger text-left">Sign out</button>
+    </div>    
+    </nav>
+    <div id="dropzone-div" class="container">
+        <form action="/file-upload"
+        class="dropzone"
+        id="my-awesome-dropzone"></form>
+        <div id="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veritatis atque minus dolorum eum dicta facere animi facilis numquam odit cum magnam harum dolore voluptatem nemo sint saepe, maxime vero!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veritatis atque minus dolorum eum dicta facere animi facilis numquam odit cum magnam harum dolore voluptatem nemo sint saepe, maxime vero!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veritatis atque minus dolorum eum dicta facere animi facilis numquam odit cum magnam harum dolore voluptatem nemo sint saepe, maxime vero!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veritatis atque minus dolorum eum dicta facere animi facilis numquam odit cum magnam harum dolore voluptatem nemo sint saepe, maxime vero!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veritatis atque minus dolorum eum dicta facere animi facilis numquam odit cum magnam harum dolore voluptatem nemo sint saepe, maxime vero!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veritatis atque minus dolorum eum dicta facere animi facilis numquam odit cum magnam harum dolore voluptatem nemo sint saepe, maxime vero!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veritatis atque minus dolorum eum dicta facere animi facilis numquam odit cum magnam harum dolore voluptatem nemo sint saepe, maxime vero!
+            
+        </div>
+    </div>    
+</body>
+</html>
